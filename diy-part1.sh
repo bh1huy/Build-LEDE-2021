@@ -15,3 +15,10 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+# Add some Extensions
+git clone https://github.com/fw876/helloworld package/ssr-plus
+git clone https://github.com/esirplayground/luci-app-poweroff package/lean/luci-app-poweroff
+git clone https://github.com/esirplayground/luci-theme-atmaterial-ColorIcon package/lean/luci-theme-atmaterial-ColorIcon
+git clone https://github.com/kenzok8/openwrt-packages package/passwall
+git clone https://github.com/kenzok8/small package/passwall-depends
