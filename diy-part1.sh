@@ -18,7 +18,8 @@
 
 # Add some Extensions
 git clone https://github.com/fw876/helloworld package/ssr-plus
+git clone https://github.com/kenzok8/openwrt-packages package/passwall
+git clone https://github.com/kenzok8/small package/passwall-dependency
 git clone https://github.com/esirplayground/luci-app-poweroff package/lean/luci-app-poweroff
 git clone https://github.com/esirplayground/luci-theme-atmaterial-ColorIcon package/lean/luci-theme-atmaterial-ColorIcon
-git clone https://github.com/kenzok8/openwrt-packages package/passwall
-git clone https://github.com/kenzok8/small package/passwall-depends
+git clone https://github.com/project-openwrt/openwrt-filebrowser.git package/filebrowser
