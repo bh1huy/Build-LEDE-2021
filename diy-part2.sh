@@ -13,4 +13,4 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.136.5/g' package/base-files/files/bin/config_generate
 # sed -i 's/password='password'/password=' '/g' package/base-files/files/bin/config_generate
-sed -i 's/CONFIG_FAT_DEFAULT_IOCHARSET="iso8859-1"/CONFIG_FAT_DEFAULT_IOCHARSET="utf8"/g' target/linux/generic/config-5.4
+# sed -i 's/CONFIG_FAT_DEFAULT_IOCHARSET="iso8859-1"/CONFIG_FAT_DEFAULT_IOCHARSET="utf8"/g' target/linux/generic/config-5.4
