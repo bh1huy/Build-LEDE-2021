@@ -19,12 +19,13 @@ on:
         required: false
         default: 'false'
   schedule:
-#           ┌───────────────────── minute (0 - 59)
-#           │ ┌─────────────────── hour (0 - 23)
-#           │ │ ┌───────────────── day of the month (1 - 31)
-#           │ │ │  ┌────────────── month (1 - 12 or JAN-DEC)
-#           │ │ │  │        ┌───── day of the week (0 - 6 or SUN-SAT)
-    - cron: 0 1 21 12 *
+    - cron: 30 1 21 12,3,6,9 *
+
+#           | | |  |        └───── day of the week  (0 - 6 or SUN-SAT)
+#           │ │ │  └────────────── month            (1 - 12 or JAN-DEC)
+#           │ │ └───────────────── day of the month (1 - 31)
+#           │ └─────────────────── hour             (0 - 23)
+#           └───────────────────── minute           (0 - 59)
 #  schedule:
 #    - cron: 0 8 * * 5
 
