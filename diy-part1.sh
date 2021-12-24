@@ -23,4 +23,5 @@ git clone https://github.com/kenzok8/small package/passwall-dependency
 git clone https://github.com/esirplayground/luci-app-poweroff package/lean/luci-app-poweroff
 git clone https://github.com/esirplayground/luci-theme-atmaterial-ColorIcon package/lean/luci-theme-atmaterial-ColorIcon
 git clone https://github.com/project-openwrt/openwrt-filebrowser.git package/filebrowser
-git clone https://github.com/riverscn/openwrt-iptvhelper.git package/iptvhelper
+git clone https://github.com/riverscn/openwrt-iptvhelper.git package/iptvhelpe
+  
