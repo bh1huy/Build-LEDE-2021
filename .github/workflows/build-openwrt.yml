@@ -27,8 +27,8 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: pentium.config
-#  CONFIG_FILE: pentium4.config
+#  CONFIG_FILE: pentium.config
+  CONFIG_FILE: pentium4.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
@@ -123,8 +123,8 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
 #        name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        name: ${{ env.FILE_DATE }}_lean-lede-i386_pentium.bin
-#        name: ${{ env.FILE_DATE }}_lean-lede-i386_pentium4.bin
+#        name: ${{ env.FILE_DATE }}_lean-lede-i386_pentium.bin
+        name: ${{ env.FILE_DATE }}_lean-lede-i386_pentium4.bin
         path: openwrt/bin
 
     - name: Organize files
@@ -141,8 +141,8 @@ jobs:
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
 #        name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        name: ${{ env.FILE_DATE }}_lean-lede-i386_pentium.bin
-#        name: ${{ env.FILE_DATE }}_lean-lede-i386_pentium4.bin
+#        name: ${{ env.FILE_DATE }}_lean-lede-i386_pentium.bin
+        name: ${{ env.FILE_DATE }}_lean-lede-i386_pentium4.bin
         path: ${{ env.FIRMWARE }}
 
     - name: Upload firmware to cowtransfer
@@ -183,11 +183,11 @@ jobs:
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
-#    - name: Remove old Artifacts
-#      uses: c-hive/gha-remove-artifacts@v1.2.0
-#      with:
-#        age: '1 day'
-#        skip-recent: 3
+##    - name: Remove old Artifacts
+##      uses: c-hive/gha-remove-artifacts@v1.2.0
+##      with:
+##        age: '1 day'  
+##        skip-recent: 3
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
